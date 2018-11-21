@@ -240,6 +240,7 @@ th {
   }
   .navbar {
     display: none;
+      background-color: deeppink;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -1086,7 +1087,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color:darkorange;
 }
 input,
 button,
@@ -3678,12 +3679,14 @@ tbody.collapse.in {
   border-top: 0;
   border-bottom: 4px dashed;
   border-bottom: 4px solid \9;
+
 }
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
   bottom: 100%;
   margin-bottom: 2px;
+
 }
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {

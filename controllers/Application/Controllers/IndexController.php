@@ -22,9 +22,9 @@ class IndexController extends Controller
             'description' => 'Small CRUD application',
             'css' =>
             [
-                $baseConfig['URLBASEADDR'] . 'css/bootstrap.min.css',
+                $baseConfig['URLBASEADDR'] . 'css/bootstrap.css',
                 $baseConfig['URLBASEADDR'] . 'css/dashboard.css',
-                $baseConfig['URLBASEADDR'] . 'css/bootstrap.custom.css',
+                $baseConfig['URLBASEADDR'] . 'css/bootstrap.css',
                 $baseConfig['URLBASEADDR'] . 'css/dashboard.css',
 
             ],

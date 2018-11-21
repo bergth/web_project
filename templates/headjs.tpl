@@ -31,5 +31,6 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    
+
+      <link rel="stylesheet" href="css/mycustombootstrap.css" />
   </head>

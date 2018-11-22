@@ -240,7 +240,6 @@ th {
   }
   .navbar {
     display: none;
-      background-color: deeppink;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -1087,7 +1086,6 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color:darkorange;
 }
 input,
 button,

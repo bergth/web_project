@@ -7,7 +7,7 @@
     <meta name="author" content="{$view.author}">
     <link rel="icon" href="{$view.favicon}">
       <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">-->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/public/apple-touch-icon.png">
 
     <title>{$view.title}</title>
 
@@ -18,8 +18,8 @@
       <style>
 
       .carousel-inner img {
-          width: 100%;
-          height: 100%;
+          width: 50%;
+          height: 50%;
       }
       </style>
     <!-- Core CSS -->
@@ -30,8 +30,8 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
+      <!-- <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>-->
     <![endif]-->
       <link rel="stylesheet" href="css/mycustombootstrap.css" />
 

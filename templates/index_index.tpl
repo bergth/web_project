@@ -40,13 +40,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="/public/moonlighter.png" alt="Moonlighter" width="1100" height="500">
+        <img class="d-block w-100" data-src="/public/moonlighter.jpg" alt="Moonlighter" width="1100" height="500">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="/public/TheyAreBillions.png" alt="They are Billions" width="1100" height="500">
+        <img class="d-block w-100" data-src="/public/TheyAreBillions.png" alt="They are Billions" width="1100" height="500">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="/public/frostpunk.jpg" alt="Frostpunk" width="1100" height="500">
+        <img class="d-block w-100" data-src="/public/frostpunk.jpg" alt="Frostpunk" width="1100" height="500">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

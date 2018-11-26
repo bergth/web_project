@@ -38,15 +38,15 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img class="d-block w-100" data-src="/public/moonlighter.jpg" alt="Moonlighter" width="1100" height="500">
+        <img class="d-block w-100" src="moonlighter.png" alt="Moonlighter" >
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" data-src="/public/TheyAreBillions.png" alt="They are Billions" width="1100" height="500">
+        <img class="d-block w-100" src="TheyAreBillions.png" alt="They are Billions">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" data-src="/public/frostpunk.jpg" alt="Frostpunk" width="1100" height="500">
+        <img class="d-block w-100" src="frostpunk.png" alt="Frostpunk">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -59,12 +59,18 @@
     </a>
   </div>
 
+
+
+  <!-- https://ibb.co/GcFvDwy
+  https://ibb.co/C9nvtmj
+  https://ibb.co/6XMnR5k-->
+
 {if $view.bodyjs == 1}
 {include file='bodyjs.tpl'}
 {/if}
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-    
-  </body>
+  <!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
+
+</body>
 </html>

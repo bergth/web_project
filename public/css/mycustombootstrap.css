@@ -17,10 +17,44 @@
     display: none;
 }
 
+nav navbar-nav{
+    margin-top: 0px;
+}
+
+.navbar-brand{
+    margin-top: 0px;
+}
+
+.navbar-wrapper{
+    margin-top: 0px;
+    height: 50px;
+}
+
 .navbar-inverse {
     background-color: #4a001f;
     min-height: 83px;
 }
+
+.container {
+    margin-top: 70px;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+/*.nav > li > a {
+
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-top: -70px;
+    margin-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+}*/
+
+
 
 body {
     background-color:#a7c4c2;
@@ -31,7 +65,7 @@ body {
 }
 
 .navbar-nav {
-    padding-top: 20px;
+    padding-top: -100px;
     padding-left: 5%;
     font-size: large;
     color: #2e0219;
@@ -62,10 +96,18 @@ b {
 
 }
 
+.carousel{
+    margin-top: 0px;
+}
 
 .carousel-inner img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 75%;
+}
+
+.carousel-inner {
+    margin: auto;
+    width: 80%;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -74,7 +116,7 @@ b {
 
 #carousel
 {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 /*https://coolors.co/bac7be-c2e1c2-7dcd85-80ab82-778472
  https://coolors.co/bec5ad-a4b494-519872-3b5249-34252f

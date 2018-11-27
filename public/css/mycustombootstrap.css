@@ -1,10 +1,63 @@
+
+
+
+/*.navbar-expand-xl|lg|md|sm{ background:#F97300;}*/
+
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+/*.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important;}*/
+
+.sidebar {
+    display: none;
+}
+
+nav navbar-nav{
+    margin-top: 0px;
+}
+
+.navbar-brand{
+    margin-top: 0px;
+}
+
+.navbar-wrapper{
+    margin-top: 0px;
+    height: 50px;
+}
+
 .navbar-inverse {
-    background-color: #80ab82;
+    background-color: #4a001f;
     min-height: 83px;
 }
 
+.container {
+    margin-top: 70px;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+/*.nav > li > a {
+
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-top: -70px;
+    margin-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+}*/
+
+
+
 body {
-    background-color:#c2e1c2;
+    background-color:#a7c4c2;
 }
 
 .sidebar {
@@ -12,10 +65,10 @@ body {
 }
 
 .navbar-nav {
-    padding-top: 20px;
+    padding-top: -100px;
     padding-left: 5%;
     font-size: large;
-    color: #34252f;
+    color: #2e0219;
 }
 
 .col-md-2 {
@@ -34,17 +87,37 @@ h1 {
 
 .nav-sidebar > li > a {
     padding-top: 20px;
+
     background-color:#778472;
 }
 
-a {
-    color:#bac7be;
-}
-
-a:focus {
+b {
+    margin-left: 0px;
 
 }
 
+.carousel{
+    margin-top: 0px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 75%;
+}
+
+.carousel-inner {
+    margin: auto;
+    width: 80%;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+#carousel
+{
+    margin-bottom: 0px;
+}
 /*https://coolors.co/bac7be-c2e1c2-7dcd85-80ab82-778472
  https://coolors.co/bec5ad-a4b494-519872-3b5249-34252f
  */

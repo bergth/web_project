@@ -9,12 +9,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{$view.links.Home}"><img src="{$view.logo}" alt="Logo"><b>{$view.title}</b></a>
+                    <a style="color:#a7c4c2" class="navbar-brand" href="{$view.links.Home}"><img src="{$view.logo}" alt="Logo"><b>{$view.title}</b></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul  class="nav navbar-nav" >
                         {foreach from=$view.links key=name item=link}
-                        <li><a href="{$link}">{$name}</a></li>
+                        <li><a style="color:#a7c4c2" style="margin-top: -15px" href="{$link}" role="button">{$name}</a></li>
+                        <li><a style="color:#a7c4c2" href="http://127.0.0.2/index.php/product/index" role="button">Products list</a></li>
+
                         {/foreach}
                        <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Main Menu <span class="caret"></span></a>

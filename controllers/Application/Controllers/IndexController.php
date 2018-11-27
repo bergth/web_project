@@ -17,8 +17,8 @@ class IndexController extends Controller
             'logo' => $baseConfig['URLBASEADDR'] . 'img/logo.png',
             'favicon' => $baseConfig['URLBASEADDR'] . 'favicon.ico',
             'appname' => $baseConfig['appName'],
-            'title' => "Andrew's Shop",
-            'author' => 'Andrew Caya',
+            'title' => "New Retro Games",
+            'author' => 'Theo and Marie-Anne',
             'description' => 'Small CRUD application',
             'css' =>
             [

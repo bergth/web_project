@@ -13,6 +13,10 @@
 
 .navbar-toggler{  background:#fff !important;}*/
 
+body {
+    padding-top: 3px;
+}
+
 .sidebar {
     display: none;
 }
@@ -42,18 +46,27 @@ nav navbar-nav{
     height: 20px;
 }
 
-/*.nav > li > a {
+a.navbar-brand {
+    margin-top: -60px;
+}
+
+.nav > li > a {
 
     position: relative;
     display: block;
     padding: 10px 15px;
-    margin-top: -70px;
+    margin-top: -50px;
     margin-right: 20px;
     padding-top: 0px;
     padding-bottom: 10px;
+    padding-right: 10px;
 
-}*/
+}
 
+.nav > li > a:hover {
+    bottom:5px;
+
+}
 
 
 body {
@@ -118,6 +131,7 @@ b {
 {
     margin-bottom: 0px;
 }
+
 /*https://coolors.co/bac7be-c2e1c2-7dcd85-80ab82-778472
  https://coolors.co/bec5ad-a4b494-519872-3b5249-34252f
  */

@@ -40,13 +40,13 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="moonlighter.png" alt="Moonlighter" >
+        <img class="d-block w-100" src="https://i.ibb.co/7pGVzj3/moonlighter.png" alt="Moonlighter" >
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="TheyAreBillions.png" alt="They are Billions">
+        <img class="d-block w-100" src="https://i.ibb.co/mNjDC73/They-Are-Billions.png" alt="They are Billions">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="frostpunk.png" alt="Frostpunk">
+        <img class="d-block w-100" src="https://i.ibb.co/yWVnCTt/frostpunk.jpg" alt="Frostpunk">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -61,16 +61,16 @@
 
 
 
-  <!-- https://ibb.co/GcFvDwy
-  https://ibb.co/C9nvtmj
-  https://ibb.co/6XMnR5k-->
+  <!-- <img src="https://i.ibb.co/mNjDC73/They-Are-Billions.png" alt="They-Are-Billions" border="0">
+<img src="https://i.ibb.co/yWVnCTt/frostpunk.jpg" alt="frostpunk" border="0">
+<img src="https://i.ibb.co/7pGVzj3/moonlighter.png" alt="moonlighter" border="0">-->
 
 {if $view.bodyjs == 1}
 {include file='bodyjs.tpl'}
 {/if}
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>

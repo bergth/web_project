@@ -63,4 +63,13 @@ class IndexController extends Controller
 
         $this->viewObject->display('index_index.tpl');
     }
+
+    public function loginAction()
+    {
+        $this->view['login'] = 1;
+
+        $this->viewObject->assign('view', $this->view);
+
+        $this->viewObject->display('login.tpl');
+    }
 }

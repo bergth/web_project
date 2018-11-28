@@ -45,17 +45,17 @@ nav navbar-nav{
     margin-bottom: 10px;
     height: 20px;
 }
-
+/*
 a.navbar-brand {
     margin-top: -60px;
-}
+}*/
 
 .nav > li > a {
 
     position: relative;
     display: block;
     padding: 10px 15px;
-    margin-top: -50px;
+    margin-top: 30px;
     margin-right: 20px;
     padding-top: 0px;
     padding-bottom: 10px;
@@ -78,7 +78,7 @@ body {
 }
 
 .navbar-nav {
-    padding-top: -100px;
+    padding-top: 0px;
     padding-left: 5%;
     font-size: large;
     color: #2e0219;

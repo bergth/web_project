@@ -6,15 +6,14 @@
     <meta name="description" content="{$view.description}">
     <meta name="author" content="{$view.author}">
     <link rel="icon" href="{$view.favicon}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">   <!-- changes the top bar -->
-    <link rel="apple-touch-icon" href="/public/apple-touch-icon.png">
+      <link rel="apple-touch-icon" href="/public/apple-touch-icon.png">
 
     <title>{$view.title}</title>
 
 
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="/public/js/jquery.min.js"></script>
+      <script src="/public/js/bootstrap.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></script>
 
     <!-- Core CSS -->
     
@@ -27,6 +26,8 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>-->
     <![endif]-->
+      <link rel="stylesheet2" href="/public/css/bootstrap.min.css"><!-- changes the top bar -->
+
       <link rel="stylesheet" href="/css/mycustombootstrap.css" />
 
 

@@ -76,3 +76,5 @@ class IndexController extends Controller
         $this->viewObject->display('login.tpl');
     }
 }
+
+

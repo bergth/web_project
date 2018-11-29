@@ -91,7 +91,12 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'Computer',100.99,'Laptop','computer_laptop.png'),(2,'Diskettes',1.99,'3.5 Diskettes','computer_3.5_diskettes.png'),(3,'LCD Monitor',150.99,'Monitor','computer_lcd_monitor.png'),(4,'HP Computer',1200.99,'HP Computer','computer_hp.png'),(5,'Computer relic',20000.00,'Old Compaq Computer','computer_original_compaq.png');
+INSERT INTO `products` VALUES 
+(1,'Moonlighter',22.79,'game','https://i.ibb.co/Mc12L28/moonlighter.jpg'),
+(2,'Frostpunk',33.99,'game','https://i.ibb.co/KK1gkNZ/frostpunk.jpg'),
+(3,'They are Billions',21.74,'game','https://i.ibb.co/BZ3VB2S/they-are-billions-header.jpg'),
+(4,'The end is nigh',16.99,'game','https://i.ibb.co/tK4NJr8/the-end-is-nigh.jpg'),
+(5,'Castle Crashers',16.99,'game','https://i.ibb.co/NF3S4gd/Castle-Crashers-Titled-Hero-Art.png');
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

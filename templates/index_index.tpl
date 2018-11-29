@@ -81,7 +81,7 @@
       <h2 class="display-4">What is New Retro ?</h2>
       <p> What is New Retro Games? </br> We seek the best retro-styled independant games </br>Click here to view list of all products:</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" style="margin-right: 10%" href="{$view.urlbaseaddr}" role="button" >Games</a>
+      <a class="btn btn-primary btn-lg" style="margin-left: 5%" href="{$view.urlbaseaddr}" role="button" >Games</a>
     </p>
   </div>
 

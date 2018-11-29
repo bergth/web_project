@@ -42,12 +42,14 @@ class IndexController extends Controller
             'links' =>
             [
                 'Home' => $baseConfig['URLBASEADDR'] . 'index.php',
-                'Products list' => $baseConfig['URLBASEADDR'] . 'index.php/product/index',
+                'Games' => $baseConfig['URLBASEADDR'] . 'index.php/product/index',
+                'Subscribe' => $baseConfig['URLBASEADDR'] . 'index.php/subscription',
             ],
             'navMenu' =>
             [
                 'Home' => $baseConfig['URLBASEADDR'] . 'index.php',
-                'Products list' => $baseConfig['URLBASEADDR'] . 'index.php/product/index',
+                'Games' => $baseConfig['URLBASEADDR'] . 'index.php/product/index',
+                'subscribe' => $baseConfig['URLBASEADDR'] . 'index.php/subscription',
 
             ],
 
@@ -63,5 +65,14 @@ class IndexController extends Controller
         $this->viewObject->assign('view', $this->view);
 
         $this->viewObject->display('index_index.tpl');
+    }
+
+    public function loginAction()
+    {
+        $this->view['bodyjs'] = 1;
+
+        $this->viewObject->assign('view', $this->view);
+
+        $this->viewObject->display('login.tpl');
     }
 }

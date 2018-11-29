@@ -1,10 +1,14 @@
 
 
+img {
+    max-width: 100%;
+}
+
 /* NAVBAR */
 .nav-link , .navbar-brand {
     color: #f4f4f4;
     cursor: pointer;
-    padding-left: 50px;
+    padding-left: 5%;
 }
 
 nav navbar-nav{
@@ -50,6 +54,10 @@ nav navbar-nav{
     margin-left: 50px;
 }
 
+.navbar {
+    padding-bottom: 0px;
+}
+
 /* SIDEBAR */
 .sidebar {
     display: none;
@@ -60,10 +68,6 @@ nav navbar-nav{
     /*background: rgba(175,238,238, 0.5);*/
 }
 
-.carousel-caption {
-
-}
-
 /* CAROUSEL */
 .carousel{
     margin-top: 0px;
@@ -72,6 +76,10 @@ nav navbar-nav{
 .carousel-caption {
     z-index: 10;
     bottom: 3rem;
+    background-color: rgba(171, 183, 183,0.7);
+    background-position: 0% 75%;
+    margin-right: 45%;
+    margin-left: -10px;
 }
 
 .carousel-inner img {
@@ -94,7 +102,15 @@ nav navbar-nav{
 }
 
 body {
-    background-color:#a7c4c2;
+    background-color:#cfe8ef;
+
+    /*
+    06d6a0
+    cfe8ef
+    d4eac8
+    b8dbd9
+
+     */
 }
 
 .col-md-2 {
@@ -103,12 +119,29 @@ body {
 
 h1 {
     margin-top: 25px;
-    margin-left: -40px;
     color: #0f0f0f;
+}
+
+.car {
+    margin-left: 15px;
+}
+
+.sub_car {
+    font-size: large;
+    margin-left: 30px;
+}
+
+.jumbotron-fluid {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.jumbotron-fluid > h1 {
+    margin-left: 5%;
 }
 
 b {
     margin-left: 0px;
-
 }
 

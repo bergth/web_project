@@ -1,3 +1,4 @@
+
 <div class="navbar-wrapper">
     <div class="container">
 
@@ -11,19 +12,9 @@
 
                     {foreach from=$view.links key=name item=link}
                         <li class="nav-item"><a style="color:#a7c4c2" href="{$link}" role="button">{$name}</a></li>
-                        <li class="nav-item"><a style="color:#a7c4c2" href="{$link}" role="button">{$name}</a></li>
                     {/foreach}
-    <!--
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>-->
-                </ul> <!--
+                </ul>
+                <!--
                 <form class="form-inline mt-2 mt-md-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button
@@ -44,10 +35,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul  class="nav navbar-nav" >
+
                         {foreach from=$view.links key=name item=link}
                         <li><a style="color:#a7c4c2" style="margin-top: -15px" href="{$link}" role="button">{$name}</a></li>
                         <li><a style="color:#a7c4c2" href="http://127.0.0.2/index.php/product/index" role="button">Products list</a></li>
-
                         {/foreach}
                        <!-- <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Main Menu <span class="caret"></span></a>
@@ -59,6 +50,8 @@
                         {/foreach}
                         </ul>
                         </li> --> <!--
+=======
+                        </li> --><!--
                     </ul>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" href="">
 
 {if isset($view.headjs)}
 {include file='headjs.tpl'}
@@ -22,9 +22,11 @@
       </div>
     </div>
 
+
   <div class="jumbotron-fluid">
     <h1 class="display-3">Welcome to {$view.appname}!</h1>
-    <p class="lead">Welcome wanderer ! You seek new adventures ? Original games with their own gameplay and innovative ideas ? Then take a look at our humble shop ! </p>
+    <p class="lead">Welcome wanderer ! You seek new adventures ? Original games with their own
+      gameplay and innovative ideas ? Then take a look at our humble shop ! </p>
     <hr class="my-4">
     <main role="main">
 
@@ -37,7 +39,8 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="https://i.ibb.co/nQkM8V3/Scene1-Gate-sit.png" alt="Moonlighter in front of the gate" >
+            <img class="d-block w-100" src="https://i.ibb.co/nQkM8V3/Scene1-Gate-sit.png"
+                 alt="Moonlighter in front of the gate" >
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1 class="car">Moonlighter</h1>
@@ -47,7 +50,8 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://i.ibb.co/g4hR3NQ/they-are-billions.jpg"" alt="They are Billions zombie town">
+            <img class="d-block w-100" src="https://i.ibb.co/g4hR3NQ/they-are-billions.jpg""
+            alt="They are Billions zombie town">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1 class="car">They are Billions</h1>
@@ -57,7 +61,8 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://i.ibb.co/TT0yLL8/The-Fall-of-Winterhome-06-2.png" alt="Frostpunk town">
+            <img class="d-block w-100" src="https://i.ibb.co/TT0yLL8/The-Fall-of-Winterhome-06-2.png"
+                 alt="Frostpunk town">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1 class="car">Frostpunk</h1>
@@ -78,8 +83,9 @@
       </div>
 
     <hr class="my-4">
-      <h2 class="display-4">What is New Retro ?</h2>
-      <p> What is New Retro Games? </br> We seek the best retro-styled independant games </br>Click here to view list of all products:</p>
+      <h2 class="display-4">What is New Retro Games?</h2>
+      <p> We seek retro-styled independant games
+        </br>Click here to view list of all products:</p>
     <p class="lead">
       <a class="btn btn-primary btn-lg" style="margin-left: 5%" href="{$view.urlbaseaddr}" role="button" >Games</a>
     </p>
@@ -97,13 +103,6 @@
 
   </main>
 
-
-
-
-
-  <!-- <img src="https://i.ibb.co/mNjDC73/They-Are-Billions.png" alt="They-Are-Billions" border="0">
-<img src="https://i.ibb.co/yWVnCTt/frostpunk.jpg" alt="frostpunk" border="0">
-<img src="https://i.ibb.co/7pGVzj3/moonlighter.png" alt="moonlighter" border="0">-->
 
 {if $view.bodyjs == 1}
 {include file='bodyjs.tpl'}

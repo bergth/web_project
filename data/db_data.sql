@@ -64,7 +64,13 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-INSERT INTO `orders` VALUES (1,'1520308800','open',560,'Coffee Table Books',4),(2,'1520222400','open',9800,'JavaScript Books',3),(3,'1520136000','complete',300,'Web Development Books',2),(4,'1520136000','invoiced',500,'PHP Books',5),(5,'1520308800','open',50,'Newspapers',3),(6,'1520308800','held',300,'Candy',3),(7,'1520222400','invoiced',1200,'Smart Phones',5);
+INSERT INTO `orders` VALUES (1,'1520308800','open',560,'Coffee Table Books',4),
+                            (2,'1520222400','open',9800,'JavaScript Books',3),
+                            (3,'1520136000','complete',300,'Web Development Books',2),
+                            (4,'1520136000','invoiced',500,'PHP Books',5),
+                            (5,'1520308800','open',50,'Newspapers',3),
+                            (6,'1520308800','held',300,'Candy',3),
+                            (7,'1520222400','invoiced',1200,'Smart Phones',5);
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 

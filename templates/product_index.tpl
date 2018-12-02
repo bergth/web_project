@@ -21,12 +21,13 @@
         </div>
         
         <div id="pageBody">
+
           <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1>Products page</h1>
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
+              <div class="table-responsive-md">
+              <table class="table table-hover">
+                <thead-light>
+                  <tr class="table-active">
                       <th>ID</th>
                       <th>Name</th>
                       <th>Price</th>
@@ -34,7 +35,8 @@
                       <th>Image</th>
                       <th>Options</th>
                   </tr>
-                </thead>
+                </thead-light>
+                  <tbody>
                   {foreach from=$view.results item=product}
                     <tr>
                         <td>{$product.id}</td>
@@ -49,11 +51,13 @@
                             <a href="{$view.urlbaseaddr}index.php/product/delete/?id={$product.id}">Delete</a>
                         </td>
                     </tr>
+                  </tbody>
                   {/foreach}
               </table>
+              </div>
             </div>
             <p><a href="{$view.urlbaseaddr}index.php/product/add/">Add new product</a></p>
-          </div>
+
         </div> <!-- END pageBody -->
         
       </div>

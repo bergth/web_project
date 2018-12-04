@@ -23,6 +23,10 @@
 </div>
 
 
+
+
+
+
 {if $view.bodyjs == 1}
     {include file='bodyjs.tpl'}
 {/if}

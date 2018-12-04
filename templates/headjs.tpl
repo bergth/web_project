@@ -8,6 +8,7 @@
     <link rel="icon" href="{$view.favicon}">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <link href="css/signin.css" rel="stylesheet">
 
     <title>{$view.title}</title>
     <!-- Core CSS -->

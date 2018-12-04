@@ -2,8 +2,8 @@
 <div class="navbar-wrapper">
     <div class="container">
 
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a style="color:#a7c4c2" class="navbar-brand" href="{$view.links.Home}"><img src="{$view.logo}" alt="Logo"><b>{$view.title}</b></a>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <a style="color:#a7c4c2"  class="navbar-brand" href="{$view.links.Home}"><img src="{$view.logo}" alt="Logo"><b>{$view.title}</b></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

@@ -101,3 +101,25 @@ h1 {
 .jumbotron-fluid > h1 {
     margin-left: 5%;
 }
+
+
+/*
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: large;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .carousel-inner img {
+
+    }
+
+
+}*/

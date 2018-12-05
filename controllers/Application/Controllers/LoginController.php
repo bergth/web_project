@@ -18,18 +18,29 @@ class LoginController extends Controller
         IndexController::config($app);
     }
 
-    public function predispatch()
+    public static function postboot(AbstractApp &$app)
+
     {
+
+        $em = $app->getServiceManager()->getRegisteredService('em1');
+
         $users = new Users();
-        $em = $this->serviceManager->getRegisteredService('em1');
+
         $sessionService = new SessionService($users, $em);
-        $this->serviceManager->addRegisteredService('SessionService', $sessionService);
+
+        $app->getServiceManager()->addRegisteredService('SessionService', $sessionService);
     }
+
     public function indexAction()
     {
        // $this->viewObject->assign('view', $this->view);
 
+
         if (isset($_SESSION['LOGGEDIN'])) {
+
+            $this->view['session']=1;
+            $this->view['bodyjs']=1;
+
             $this->viewObject->assign('view', $this->view);
             $this->viewObject->display('index_index.tpl');
         }

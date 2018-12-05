@@ -45,10 +45,18 @@
                         <td>{$product.description}</td>
                         <td>{$product.image}</td>
                         <td>
+                            {if $view.session == 1}
+
                             <a href="{$view.urlbaseaddr}index.php/product/edit/?id={$product.id}">Modify</a>
+                            {/if}
+
                         </td>
                         <td>
+                            {if $view.session == 1}
+
                             <a href="{$view.urlbaseaddr}index.php/product/delete/?id={$product.id}">Delete</a>
+                            {/if}
+
                         </td>
                     </tr>
                   </tbody>
@@ -56,7 +64,10 @@
               </table>
               </div>
             </div>
+            {if $view.session == 1}
+
             <p><a href="{$view.urlbaseaddr}index.php/product/add/">Add new product</a></p>
+            {/if}
 
         </div> <!-- END pageBody -->
         

@@ -43,6 +43,7 @@ class IndexController extends Controller
                 'Home' => $baseConfig['URLBASEADDR'] . 'index.php',
                 'Games' => $baseConfig['URLBASEADDR'] . 'index.php/product/index',
                 'login' => $baseConfig['URLBASEADDR'] . 'index.php/login',
+
                 //'wrongCredential' => $baseConfig['URLBASEADDR'] . 'index.php/wrongCredential',
                 //'invalidSession' => $baseConfig['URLBASEADDR'] . 'index.php/invalidSession',
                 //'logOut' => $baseConfig['URLBASEADDR'] . 'index.php/invalidSession',

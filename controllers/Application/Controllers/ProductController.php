@@ -33,6 +33,12 @@ class ProductController extends Controller
         $this->view['saved'] = 0;
 
         $this->view['error'] = 0;
+
+        if(!empty($_SESSION)){
+            $this->view['session']=1;
+        } else {
+            $this->view['session']=0;
+        }
     }
 
     public function indexAction()

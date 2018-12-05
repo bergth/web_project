@@ -128,8 +128,8 @@ CREATE TABLE `users` (
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` VALUES
-(1, 'theo@theo.fr', '$2y$10$DtBqH3kd3bVMEXTC8E/xNOhJqCG2rHFbRKwpiODOXo4V5pzdlILwG'),
-(2, 'marieanne@pouet.fr', '$2y$10$jUZke3fKh0Ksh0/NPPVPye.H1cs3C01Jz9WPCIS6wdkzBoEJMJHAm');
+(1, 'theo', '$2y$10$DtBqH3kd3bVMEXTC8E/xNOhJqCG2rHFbRKwpiODOXo4V5pzdlILwG'),
+(2, 'marieanne', '$2y$10$jUZke3fKh0Ksh0/NPPVPye.H1cs3C01Jz9WPCIS6wdkzBoEJMJHAm');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 

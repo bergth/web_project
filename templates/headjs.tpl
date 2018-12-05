@@ -8,7 +8,9 @@
     <link rel="icon" href="{$view.favicon}">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-      <link href="css/signin.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+      <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 
     <title>{$view.title}</title>
     <!-- Core CSS -->

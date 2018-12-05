@@ -25,9 +25,9 @@
           <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1>Products page</h1>
               <div class="table-responsive-md">
-              <table class="table table-hover">
-                <thead-light>
-                  <tr class="table-active">
+              <table id="table_id"  class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                  <tr>
                       <th>ID</th>
                       <th>Name</th>
                       <th>Price</th>
@@ -35,7 +35,7 @@
                       <th>Image</th>
                       <th>Options</th>
                   </tr>
-                </thead-light>
+                </thead>
                   <tbody>
                   {foreach from=$view.results item=product}
                     <tr>
@@ -62,6 +62,12 @@
         
       </div>
     </div>
+
+  <script>
+  $(document).ready( function () {
+     $('#table_id').DataTable();
+  } );
+  </script>
 
 {if $view.bodyjs == 1}
 {include file='bodyjs.tpl'}

@@ -43,6 +43,9 @@ class IndexController extends Controller
                 'Home' => $baseConfig['URLBASEADDR'] . 'index.php',
                 'Games' => $baseConfig['URLBASEADDR'] . 'index.php/product/index',
                 'login' => $baseConfig['URLBASEADDR'] . 'index.php/login',
+                //'wrongCredential' => $baseConfig['URLBASEADDR'] . 'index.php/wrongCredential',
+                //'invalidSession' => $baseConfig['URLBASEADDR'] . 'index.php/invalidSession',
+                //'logOut' => $baseConfig['URLBASEADDR'] . 'index.php/invalidSession',
             ],
             'navMenu' =>
             [
@@ -65,14 +68,6 @@ class IndexController extends Controller
         $this->viewObject->display('index_index.tpl');
     }
 
-    public function loginAction()
-    {
-        $this->view['bodyjs'] = 1;
-
-        $this->viewObject->assign('view', $this->view);
-
-        $this->viewObject->display('login.tpl');
-    }
 }
 
 

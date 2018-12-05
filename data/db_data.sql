@@ -107,6 +107,32 @@ INSERT INTO `products` VALUES
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+                          `id` int(11) NOT NULL AUTO_INCREMENT,
+                          `username` varchar(50) UNIQUE KEY NOT NULL,
+                          `password` varchar(255) COLLATE utf8_bin NOT NULL,
+                          PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES
+(1, 'theo@theo.fr', '$2y$10$DtBqH3kd3bVMEXTC8E/xNOhJqCG2rHFbRKwpiODOXo4V5pzdlILwG'),
+(2, 'marieanne@pouet.fr', '$2y$10$jUZke3fKh0Ksh0/NPPVPye.H1cs3C01Jz9WPCIS6wdkzBoEJMJHAm');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;

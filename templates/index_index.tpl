@@ -87,7 +87,7 @@
       <p> We seek retro-styled independant games
         </br>Click here to view list of all products:</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" style="margin-left: 5%" href="{$view.urlbaseaddr}" role="button" >Games</a>
+      <a class="btn btn-primary btn-lg" style="margin-left: 5%" href="{$view.urlbaseaddr}index.php/product/index/" role="button" >Games</a>
     </p>
   </div>
 

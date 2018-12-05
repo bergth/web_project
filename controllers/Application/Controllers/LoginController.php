@@ -2,16 +2,16 @@
 
 namespace Application\Controllers;
 
-use \web_project\AbstractApp;
+use \Ascmvc\AbstractApp;
 use Application\Services\SessionService;
-use Application\Models\Entity\session;
+use Application\Models\Entity\Users;
 use \Ascmvc\Mvc\Controller;
-use Application\Services\CrudProductsService;
-use Application\Services\CrudProductsServiceTrait;
-use Application\Models\Entity\Products;
 
-class SessionController extends Controller
+
+class LoginController extends Controller
 {
+
+   // use SessionServiceTrait;
 
     public static function config(AbstractApp &$app)
     {
@@ -20,18 +20,23 @@ class SessionController extends Controller
 
     public function predispatch()
     {
+        $users = new Users();
         $em = $this->serviceManager->getRegisteredService('em1');
+        $sessionService = new SessionService($users, $em);
+        $this->serviceManager->addRegisteredService('SessionService', $sessionService);
+    }
+    public function indexAction()
+    {
+       // $this->viewObject->assign('view', $this->view);
 
-        $products = new session();
+        if (isset($_SESSION['LOGGEDIN'])) {
+            $this->viewObject->assign('view', $this->view);
+            $this->viewObject->display('index_index.tpl');
+        }
+        else {
+            $this->viewObject->assign('view', $this->view);
+            $this->viewObject->display('login_index.tpl');
+        }
 
-        $crudService = new SessionService($session, $em);
-
-        $this->serviceManager->addRegisteredService('SessionService', $crudService);
-
-        $this->setCrudProducts($this->serviceManager->getRegisteredService('SessionService'));
-
-        $this->view['saved'] = 0;
-
-        $this->view['error'] = 0;
     }
 }

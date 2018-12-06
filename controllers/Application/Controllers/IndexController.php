@@ -46,7 +46,6 @@ class IndexController extends Controller
 
                 //'wrongCredential' => $baseConfig['URLBASEADDR'] . 'index.php/wrongCredential',
                 //'invalidSession' => $baseConfig['URLBASEADDR'] . 'index.php/invalidSession',
-                //'logOut' => $baseConfig['URLBASEADDR'] . 'index.php/invalidSession',
             ],
             'navMenu' =>
             [

@@ -13,6 +13,7 @@
                     {foreach from=$view.links key=name item=link}
                         <li class="nav-item"><a style="color:#a7c4c2" href="{$link}" role="button">{$name}</a></li>
                     {/foreach}
+                        <li class="nav-item"> <button name="logout" type="logout">Logout</button></li>
                 </ul>
                 <!--
                 <form class="form-inline mt-2 mt-md-0">

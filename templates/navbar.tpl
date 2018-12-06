@@ -1,4 +1,5 @@
 
+
 <div class="navbar-wrapper">
     <div class="container">
 
@@ -13,14 +14,13 @@
                     {foreach from=$view.links key=name item=link}
                         <li class="nav-item"><a style="color:#a7c4c2" href="{$link}" role="button">{$name}</a></li>
                     {/foreach}
-                        <li class="nav-item"> <button name="logout" type="logout">Logout</button></li>
+
                 </ul>
-                <!--
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button
-                </form>>-->
             </div>
+
+            <form method="post">
+                <button class="btn btn-primary" name="logout" type="submit" value="2">Logout</button>
+            </form>
         </nav>
         <!--
         <nav class="navbar navbar-inverse navbar-fixed-top">

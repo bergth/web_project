@@ -9,6 +9,7 @@
 namespace Application\Services;
 
 use Application\Models\Entity\Users;
+use Application\Models\Entity\logout;
 use Application\Models\Traits\DoctrineTrait;
 use Application\Models\Repository\UsersRepository;
 use Doctrine\ORM\EntityManager;

@@ -26,8 +26,23 @@ img {
     padding-left: 40px;
 }
 
+.nav > button > a {
+    position: relative;
+    padding-right: 10px;
+    padding-left: 40px;
+}
+
+.nav > button > a:hover {
+    bottom:5px;
+}
+
 .nav > li > a:hover {
     bottom:5px;
+}
+
+button {
+    box-sizing: unset;
+    -moz-appearance: none;
 }
 
 .navbar-nav {
@@ -102,23 +117,6 @@ h1 {
     margin-left: 5%;
 }
 
-@media screen and (max-width: 600px) {
-    .jumbotron-fluid > h1, h1 {
-        font-size: large;
-    }
-
-    .jumbotron-fluid > h2, h2 {
-        font-size: medium;
-    }
-
-    .jumbotron-fluid > p, p {
-        font-size: small;
-    }
-
-    .carousel-inner img {
-
-    }
-}
 
 
 /** Table **/

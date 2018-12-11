@@ -10,23 +10,22 @@
   <body>
   {include file='navbar.tpl'}
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-          {foreach from=$view.navMenu key=navMenuEntry item=navMenuLink}
-            <li><a href="{$navMenuLink}">{$navMenuEntry}</a></li>
-          {/foreach}
-          </ul>
-        </div>
-        
         <div id="pageBody">
 
           <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
             <h1>Products page</h1>
+
+              {if $view.session != 1}
+              <div class="jumbotron-fluid">
+                  <h3>You need to be connected to access options </h3>
+                  <h5>Click here to <a href="index.php/login">Log in</a></h5>
+              </div>
+              {/if}
+
               <div class="table-responsive-md">
-              <table id="table_id"  class="table table-striped table-bordered" style="width:100%">
-                <thead>
+              <table id="table_id"  class="table  table-hover table-striped table-bordered dt-responsive nowrap">
+                <thead style="background-color: rgb(52, 58, 64);color: rgb(167, 196, 194)">
                   <tr>
                       <th>ID</th>
                       <th>Name</th>
@@ -34,6 +33,9 @@
                       <th>Description</th>
                       <th>Image</th>
                       <th>Options</th>
+                      {if $view.session == 1}
+                          <th> </th>
+                      {/if}
                   </tr>
                 </thead>
                   <tbody>
@@ -44,20 +46,19 @@
                         <td>{$product.price}</td>
                         <td>{$product.description}</td>
                         <td>{$product.image}</td>
-                        <td>
-                            {if $view.session == 1}
 
+                        {if $view.session == 1}
+                        <td>
                             <a href="{$view.urlbaseaddr}index.php/product/edit/?id={$product.id}">Modify</a>
-                            {/if}
-
                         </td>
                         <td>
-                            {if $view.session == 1}
-
                             <a href="{$view.urlbaseaddr}index.php/product/delete/?id={$product.id}">Delete</a>
-                            {/if}
-
                         </td>
+
+                        {else}
+                            <td>none</td>
+                        {/if}
+
                     </tr>
                   </tbody>
                   {/foreach}
@@ -66,20 +67,11 @@
             </div>
             {if $view.session == 1}
 
-            <p><a href="{$view.urlbaseaddr}index.php/product/add/">Add new product</a></p>
+            <p style="padding-left: 5%"> <a  href="{$view.urlbaseaddr}index.php/product/add/">Add new product</a></p>
             {/if}
 
         </div> <!-- END pageBody -->
-        
-      </div>
-    </div>
 
-  <script>
-
-  $(document).ready( function () {
-     $('#table_id').DataTable();
-  } );
-  </script>
 
 {if $view.bodyjs == 1}
 {include file='bodyjs.tpl'}
